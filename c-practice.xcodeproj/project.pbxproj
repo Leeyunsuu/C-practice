@@ -53,6 +53,8 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
 		};
 		AF1992E825D27F670074BD8A /* c-practice */ = {
 			isa = PBXGroup;
