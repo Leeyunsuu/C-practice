@@ -6,21 +6,16 @@
 //
 
 #include <stdio.h>
+#include <math.h>
 #define MONTH 12
 #define YEAR 30
 int main(void) {
     // insert code here...
-  int d;
-  double f;
+  int x=24;
+  double interest;
   
-  f=5/4;
-  printf("(5/4) = %f \n", f);
   
-  f=(double)5/4;
-  printf("(double)5/4 = %f \n", f);
-  d=1.3+1.8;
-  printf("1.3 + 1.8 = %d \n", d);
-  d=(int)1.3+(int)1.8;
-  printf("(int)1.3 + (int)1.8 = %d \n", d);
+  interest= x*pow(1.0+0.06, 382);
+  printf("382년 간, 24달러의 이율 : %f \n", interest);
   return 0;
 }
