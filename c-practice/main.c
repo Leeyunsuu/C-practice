@@ -10,19 +10,29 @@
 
 int main(void) {
     // insert code here...
-  int x1, x2, y1, y2,x,y;
-  double total, total2;
+  int year, ex1, ex2, ex3;
   
-  printf("첫 번째 점을 입력하세요. \n");
-  scanf("%d %d", &x1, &y1);
-  printf("두 번째 점을 입력하세요. \n");
-  scanf("%d %d", &x2, &y2);
   
-  x=(float)x2-(float)x1;
-  y=(float)y2-(float)y1;
-  total2=pow(x, 2)+ pow(y, 2);
-  total=sqrt(total2);
-  printf("%f입니다.\n",total);
-  printf("%f\n",total2);
+  printf("희망하는 연도를 입력하세요. \n");
+  scanf("%d" , &year);
+  
+  ex1= year%4;
+  ex2= year%100;
+  ex3= year%400;
+  printf("%d\n",ex2);
+  if((ex1==0)&&(ex2==0)) {
+    if(ex3 == 0){
+      printf("%d년은 윤년입니다.\n", year);
+    }
+    printf("%d년은 평년입니다.\n", year);
+  }
+  else if (ex1 == 0 ){
+    printf("%d년은 윤년입니다.\n", year);
+  }
+  else {
+    printf("%d년은 평년입니다.\n", year);
+  }
+  
+  
   return 0;
 }
