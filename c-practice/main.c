@@ -23,8 +23,9 @@ int main(void) {
   if((ex1==0)&&(ex2==0)) {
     if(ex3 == 0){
       printf("%d년은 윤년입니다.\n", year);
+    } else {
+      printf("%d년은 평년입니다.\n", year);
     }
-    printf("%d년은 평년입니다.\n", year);
   }
   else if (ex1 == 0 ){
     printf("%d년은 윤년입니다.\n", year);
